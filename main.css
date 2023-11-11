@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/white-coupe-sport-car-standing-road-front-view.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    padding: 20px;
+    letter-spacing: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.menu{
+    color: #fff;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 13px;
+    text-decoration: none;
+}
+.menu ul li a{
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    position: relative;
+}
+.register{
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #f1e8e8;
+}
+.register a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+
+}
+.register:hover{
+    background-color: rgb(224, 199, 3);
+}
+.h-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+span{
+    letter-spacing: 5px;
+}
+.h-txt h1{
+    font-size: 50px;
+}
+.h-txt a{
+    letter-spacing: 5px;
+    border: none;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.menu ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(238, 255, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.h-txt a:hover{
+    background: #f7c204;
+}
